@@ -69,7 +69,8 @@ Implement a program that categorises a file by a financial statement type, per t
 - A balance sheet is a financial statement that reports a company's assets, liabilities and shareholders' equity at a specific point in time, and provides a basis for computing rates of return and evaluating its [capital structure](https://www.investopedia.com/terms/c/capitalstructure.asp). It is a financial statement that provides a snapshot of what a company owns and owes, as well as the amount invested by shareholders.
 - A fundamental principle of a balance sheet is that
 
-Assets = (Liabilities + Equity)
+`Assets = (Liabilities + Equity)`
+
 As the GAAP principles state that Total Assets must be declared in addition to the Total liabilities and shareholders' equity, we can expect that that two values in the balance sheet must be equivalent to each other. Firstly, This can be tested using the equality operator (==). If the function finds that there are two keys with similar values, it carries out the second level of validation. The keys themselves are checked to verify if they contain the word "asset" or "liabilit". This is to ensure that there is reasonable support for words such as "assets", "liability" and "liabilities"
 
 ### Income Statement
