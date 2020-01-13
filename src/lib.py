@@ -4,7 +4,7 @@ import csv
 import re
 
 
-# Checks if a given file is a balance sheet by computing if assets = (liabilities + equity)
+# Checks if a given file is a balance sheet by computing if assets == (liabilities + equity)
 def is_balance_sheet(data):
     x = value, count = Counter(data.values()).most_common(1)[0]
     for key, value in data.items():
@@ -64,7 +64,7 @@ def check_file(data):
 
 
 # Validate terminal user input
-def check_args(args):
+def validate_args(args):
     if len(args) != 2:
         print("Incorrect number of arguments, Please check correct format")
         return False
