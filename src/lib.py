@@ -76,3 +76,10 @@ def check_file(data):
         print('is income statement')
     else:
         print('is cash-flow statement')
+
+
+def check_args(args):
+    if len(args) != 2:
+        print("Incorrect number of arguments, Please check correct format")
+        return False
+    return True
