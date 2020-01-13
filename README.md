@@ -83,3 +83,17 @@ Assets = (Liabilities + Equity)
 
 - The statement of cash flows, or the cash flow statement, is a financial statement that summarises the amount of [cash and cash equivalents](https://www.investopedia.com/terms/c/cashandcashequivalents.asp) entering and leaving a company. The cash flow statement (CFS) measures how well a company manages its cash position, meaning how well the company generates cash to pay its debt obligations and fund its operating expenses.
 - As the program will only be used with financial statements, of which there are only 3. If it recognises that a file is not an Income Statement or a Balance Sheet, it must be of the type Cash Flow Statement.
+
+### Known Issues
+
+- The Starbucks Income statement file in sample_data/starbucks.csv return an error
+
+```
+  File "main.py", line 15, in <module>
+  main()
+  File "main.py", line 11, in main
+  csv_values = parse_csv(file_name)
+  File "/Users/parik/Desktop/ValSys/src/lib.py", line 41, in parse_csv
+  for date, key, value in csv_reader:
+  ValueError: not enough values to unpack (expected 3, got 2)
+```
