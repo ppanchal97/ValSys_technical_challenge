@@ -69,9 +69,7 @@ Implement a program that categorises a file by a financial statement type, per t
 - A balance sheet is a financial statement that reports a company's assets, liabilities and shareholders' equity at a specific point in time, and provides a basis for computing rates of return and evaluating its [capital structure](https://www.investopedia.com/terms/c/capitalstructure.asp). It is a financial statement that provides a snapshot of what a company owns and owes, as well as the amount invested by shareholders.
 - A fundamental principle of a balance sheet is that
 
-$$
 Assets = (Liabilities + Equity)
-$$
 
 ### Income Statement
 
