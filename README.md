@@ -24,35 +24,35 @@ Implement a program that categorises a file by a financial statement type, per t
 
 ## Function Declarations
 
-### `is_balance_sheet()`
+#### `is_balance_sheet()`
 
 - Arguments - 1 : Hashmap of the key, values in a CSV file
 - Purpose - To check if a file is a balance sheet
 - Return - True or False
 - Return Type - Boolean
 
-### `is_income_statement()`
+#### `is_income_statement()`
 
 - Arguments - 1 : Hashmap of the key, values in a CSV file
 - Purpose - To check if a file is an income statement
 - Return - True or False
 - Return Type - Boolean
 
-### `parse_csv()`
+#### `parse_csv()`
 
 - Arguments - 1 : CSV file
 - Purpose - To retrieve the key value pairs of a CSV file
 - Return - Keys and values in the file
 - Return Type - Hashmap (Dictionary)
 
-### `check_file()`
+#### `check_file()`
 
 - Arguments - 1 : Hashmap of the key, values in a CSV file
 - Purpose - To print the type of financial statement
 - Return - Outputs to terminal type of file
 - Return Type - /
 
-### `validate_args()`
+#### `validate_args()`
 
 - Arguments - 1 : Array of strings
 - Purpose - To validate if the user has entered valid command line arguments
