@@ -14,7 +14,7 @@ def is_balance_sheet(data):
     return False
 
 
-# Check if a given file is an income statement by computing the net income and adjusting for deductibles
+# Checks if a given file is an income statement by computing the net income and adjusting for deductibles
 def is_income_statement(data):
     tax_figures = []
     nums = []
@@ -33,7 +33,7 @@ def is_income_statement(data):
     return False
 
 
-# Parse a CSV file into a dictionary containing key-value pairs. Hashmap values are standardized to type float
+# Parses a CSV file into a dictionary containing key-value pairs. Hashmap values are standardized to type float
 def parse_csv(file_path):
     with open(f'{file_path}') as csv_file:
         values = {}
@@ -53,7 +53,7 @@ def parse_csv(file_path):
     return values
 
 
-# Return the type of financial document
+# Returns the type of financial document
 def check_file(data):
     if is_balance_sheet(data):
         print('Balance Sheet')
@@ -63,7 +63,7 @@ def check_file(data):
         print('Cash-Flow Statement')
 
 
-# Validate terminal user input
+# Validates terminal user input
 def validate_args(args):
     if len(args) != 2:
         print("Incorrect number of arguments, Please check correct format")

@@ -61,8 +61,8 @@ Implement a program that categorises a file by a financial statement type, per t
 
 ## Explanation
 
-- The categorisation algorithm has been implemented using basic theories and notions of accounting in accordance with the Generally Accepted Accounting Principles (GAAP). Each section lists the accounting principle, its explanation and the implementation logic. The process of accounts reconciliation (AR) has been carried out the necessary steps to categorise the type of financial statement
-- As the financial wordings in the keys of the CSV files might differ greatly between the accounting practices of various companies, reliance is placed on the values, with the characters in the keys acting as a secondary validator.
+- The categorisation algorithm has been implemented using basic theories and notions of accounting in accordance with the Generally Accepted Accounting Principles (GAAP). Each section lists the accounting principle, its explanation and the implementation logic. The process of accounts reconciliation (AR) has been carried out at the necessary steps to categorise the type of financial statement
+- As the financial wordings in the keys of the CSV files might differ greatly between the accounting practices of various companies, reliance is placed on the values. Validation of the characters in the keys occurs at the secondary level.
 
 ### Balance Sheet
 
@@ -70,6 +70,7 @@ Implement a program that categorises a file by a financial statement type, per t
 - A fundamental principle of a balance sheet is that
 
 Assets = (Liabilities + Equity)
+As the GAAP principles state that Total Assets must be declared in addition to the Total liabilities and shareholders' equity, we can expect that that two values in the balance sheet must be equivalent to each other. Firstly, This can be tested using the equality operator (==). If the function finds that there are two keys with similar values, it carries out the second level of validation. The keys themselves are checked to verify if they contain the word "asset" or "liabilit". This is to ensure that there is reasonable support for words such as "assets", "liability" and "liabilities"
 
 ### Income Statement
 
