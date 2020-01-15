@@ -9,7 +9,7 @@ Implement a program that categorises a file by a financial statement type, per t
 
 1.  Main.py
 
-- Contains the entry point for the file
+- Contains the entry point for the program
 
 2.  Lib.py
 
