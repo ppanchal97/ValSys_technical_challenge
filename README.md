@@ -99,3 +99,5 @@ Implement a program that categorises a file by a financial statement type, per t
   for date, key, value in csv_reader:
   ValueError: not enough values to unpack (expected 3, got 2)
 ```
+
+- It turns out that the `starbucks.csv` file did not contain 3 columns throughout, the file had to be modified by ensuring that it adheres to the general structure of all the other files
