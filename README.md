@@ -20,7 +20,7 @@ Implement a program that categorises a file by a financial statement type, per t
 - argv[0] : main file (main.py)
 - argv[1] : relative or absolute path to CSV file
 
-      	 `python3 main.py PATH_TO_FILE`
+`python3 main.py PATH_TO_FILE`
 
 ## Function Declarations
 
